@@ -3,16 +3,15 @@
 <% @tasks.each do |task| %>
   <div>
     <input type="checkbox" id="task" name="task" checked>
-    <label for="task">
-
     <%= link_to task.title, task_path(task)  %>
-    <%= link_to 'Delete', task_path(task), method: :delete,
-    data: { confirm: 'Are you suuuure you did it?' } %>
+
+    <%= link_to  task_path(task), method: :delete,
+    data: { confirm: 'Are you suuuure you did it?' } do  %>
+    <%= image_tag "delete.png", width: 20%>
     <% end %>
 
-    </label>
   </div>
-
+<% end %>
   <%= link_to "New Task", new_task_path %>
 
 

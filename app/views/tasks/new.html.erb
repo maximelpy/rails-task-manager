@@ -1,7 +1,5 @@
 <h1>CREATE A DAMN TASK U LAZY</h1>
 
-<%= simple_form_for(@task) do |f| %>
-  <%= f.input :title %>
-  <%= f.input :details %>
-  <%= f.submit %>
-<% end %>
+
+
+<%= render "form", task: @task %>

@@ -1,14 +1,8 @@
-<h1>EDIT TASK</h1>
 
-<%= simple_form_for(@task) do |f| %>
-  <%= f.input :title %>
-  <%= f.input :details %>
-  <%= f.submit %>
-<% end %>
+<%= render "form", task: @task %>
 
 <button><%= link_to "TASK IS FINE", tasks_path %></button>
 
 <button><%= link_to "Back to list", tasks_path(@tasks) %></button>
-
 
 
