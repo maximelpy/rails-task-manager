@@ -1,3 +1,4 @@
+<div class="container-md">
 <h1> <%= @task.title %> </h1>
 <p> <%= @task.details %> </p>
 <p> <% if @task.completed? == true %>
@@ -8,4 +9,4 @@
     <%= link_to "EDIT", edit_task_path(@task) %>
 </p>
 <%= link_to "Back to list", tasks_path(@tasks) %>
-
+</div>

@@ -1,7 +1,7 @@
 <h1>All tasks</h1>
-
+<div class="container-xl">
 <% @tasks.each do |task| %>
-  <div>
+  <div class="container-md">
     <input type="checkbox" id="task" name="task" checked>
     <%= link_to task.title, task_path(task)  %>
 
@@ -13,5 +13,5 @@
   </div>
 <% end %>
   <%= link_to "New Task", new_task_path %>
-
+</div>
 

@@ -1,0 +1,23 @@
+@import "bootstrap/scss/bootstrap"
+
+
+div.container-xl{
+
+}
+
+
+div.container-md{
+  display: flex;
+  border: 1px dotted grey;
+  text-align: center;
+  align-item: center;
+  width: 500px;
+  padding: 25px;
+}
+
+a{
+  border-radius: rounded;
+  text-decoration: none;
+  margin: 0px 10px;
+
+}
